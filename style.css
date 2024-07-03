@@ -9,6 +9,7 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    background-color: #f8f9fa!important;
 }
 
 .highlight {
@@ -80,23 +81,114 @@ ul li{
     color: white;
     font-weight:700;
     gap: 8px;
+
+}
+.info{
+display: flex;
+gap: 40px;
+justify-content: center;
+align-items: center;
+height: 300px;
+width: 100%;
 }
 
 
+
+.info-card{
+    background-color: #3E60FF;
+    width: 564px;
+    height: 140px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-wrap: wrap;
+    color: white;
+
+}
+ .info-card p{
+    width: 300px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align:left;
+ }
+
+ .info-card:first-child p:last-child{
+    width: 280px;
+}
 
 .video-section video {
     max-width: 100%;
+    border-radius: 16px;
 }
-
+.video-section h2{
+    color:#FF6A2F;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
 .ebook-section {
-    background: #ffdd57;
+    background:#FFB131;
     padding: 40px 20px;
     text-align: center;
+    height: 640px;
+}
+.ebook-section h1{
+    font-size: 56px;
+    font-weight: 800;
+    color: white;
 }
 
+.row {
+    gap: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.col-sm{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    width: 370px;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+.col-sm p{
+    color:#FF6A2F;
+    font-size: 32px;
+    font-weight: 700;  
+}
+
+.container h2{
+    color:#FF6A2F;
+    font-size: 44px;
+    font-weight: 600;
+}
+.countries{
+    display: flex;
+    flex-direction: column;
+    background-color:#3E60FF;
+    padding: 0 0 30px 0;
+}
+
+.countries img{
+    width: 100%;
+ 
+}
+.countries p{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
 .cta-section {
     background: #ffdd57;
-    padding: 60px 40px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -105,12 +197,30 @@ ul li{
     flex-direction: column;
     align-content: center;
 }
+.contacts{
+    background-color: #FF6A2F;
+    height: 290px;
+    display: flex;
+}
 
-footer .social-media a {
+footer .social-media  {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    align-items: center;
+    
 }
+.social-media i{
+    font-size: 35px;
+}
+
+.footer-container{
+    align-self: center;
+}
+.jit p{
+    color: black;
+}
+
 
 .beautiful-button {
     position: relative;
