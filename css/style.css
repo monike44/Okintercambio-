@@ -365,6 +365,7 @@ footer .social-media {
     background-color: #FFB131;
     height: 60rem;
     align-content: center ;
+
 }
 
 .btn-orange {
@@ -514,16 +515,29 @@ footer .social-media {
 	margin: 100px auto;
 }
 
-
-@media screen and (max-width:425px){
-
+@media screen and (max-width: 430px){
     .hero-section {
-        background-image: url(../img/LP\ -\ HERO\ 1\ 1.png);
+        
         background-position: center;
         background-size: cover;
         padding: 2rem 2rem 4rem;
-        height: auto;
+        
     }
+    #free{
+        right: 50px;
+        bottom: -80px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .hero-section {
+        background-image: url(../img/LP\ -\ HERO\ 1\ 1.png);
+        height: auto;
+        padding-bottom: 15rem;
+    }
+    
 
     #p1 {
         font-size: 5rem;
@@ -539,7 +553,6 @@ footer .social-media {
         flex-wrap: wrap;
         justify-content: left;
     }
-
     .info-card {
         min-height: 11rem;
     }
@@ -589,6 +602,14 @@ footer .social-media {
     .video-section video {
         border-radius: 0;
         align-self: center;
+    }
+}
+
+@media screen and (min-width: 1151px){
+    .form-section {
+        height: 100rem;
+        background-image: url(../img/LP\ -\ IMG\ FORMS\ 1.png);
+        background-size: cover;
     }
 }
 
