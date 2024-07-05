@@ -18,7 +18,7 @@ body {
 }
 
 section {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
 }
 
 .highlight {
@@ -170,6 +170,7 @@ ul li {
     color: #ff6a2f;
     font-size: 4rem;
     font-weight: 600;
+    text-align: center;
 }
 .countries {
     display: flex;
@@ -403,7 +404,9 @@ footer .social-media {
 }
 
 .inputs:focus {
-    border: 2px solid #000;
+    outline: none !important;
+    border: black 2px solid;
+    box-shadow: none  !important;
 }
 
 .error-msg {
@@ -435,8 +438,7 @@ footer .social-media {
 /* MODAL */
 .modal-confirm {		
 	color: #636363;
-	width: 325px;
-    max-width: 100%;
+    max-width: 43rem;
 	font-size: 14px;
 }
 .modal-confirm .modal-content {
@@ -523,10 +525,25 @@ footer .social-media {
         padding: 2rem 2rem 4rem;
         
     }
+    
     #free{
         right: 50px;
         bottom: -80px;
     }
+
+    .modal-confirm {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .countries {
+        scale: 0.9;
+    }
+
 }
 
 
@@ -588,6 +605,10 @@ footer .social-media {
         height: auto;
     }
 
+    .container h2 {
+        font-size: 2.5rem;
+        color: #3e60ff;
+    }
     footer {
         flex-direction: column;
     }
