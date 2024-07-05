@@ -27,9 +27,11 @@ confirmButton.addEventListener('click', function (event) {
         if (input.value.trim() === '') {
             todosPreenchidos = false;
             input.classList.add("invalidado");
+            input.nextElementSibling.classList.add("error-msg-active");
 
         } else {
             input.classList.remove("invalidado");
+            input.nextElementSibling.classList.remove("error-msg-active");
         }
     });
 
