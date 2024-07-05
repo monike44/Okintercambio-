@@ -53,24 +53,28 @@
                         <p>modelo de planejamento</p>
                     </li>
                 </ul>
-                <button class="beautiful-button">Garanta sua vaga</button>
+                <a href="#form-section"><button class="beautiful-button">Garanta sua vaga</button></a>
                 <img id="free" src="./img/Group.png" alt="gratis">
             </div>
         </div>
 
     </section>
 
-    <section class="info">
-        <div class="info-card">
-            <img src="./img/Group (1).png" alt="livro">
-            <p>Saiba como fazer um intercâmbio caber no
-                seu orçamento!</p>
+    <section class="info container">
 
-        </div>
-        <div class="info-card">
-            <img src="./img/Group (2).png" alt="avião">
-            <p>Entenda como escolher o destino com as melhores oportunidades para você!</p>
+        <div class="row w-100 justify-content-center">
 
+            <div class="info-card col-sm-5">
+                <img src="./img/Group (1).png" alt="livro">
+                <p>Saiba como fazer um intercâmbio caber no
+                    seu orçamento!</p>
+    
+            </div>
+            <div class="info-card col-sm-5">
+                <img src="./img/Group (2).png" alt="avião">
+                <p>Entenda como escolher o destino com as melhores oportunidades para você!</p>
+    
+            </div>
         </div>
 
     </section>
@@ -91,15 +95,15 @@
         <div class="container">
             <h1>Receba um e-book exclusivo com:</h1>
             <div class="row mt-md-3">
-                <div class="col-sm">
+                <div class="col-sm ebook-col ">
                     <img src="./img/Vector (4).png" alt="Ícone 1" class="mb-2">
                     <p>Modelo de planejamento passo a passo</p>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm ebook-col">
                     <img src="./img/Vector (5).png" alt="Ícone 2" class="mb-2">
                     <p>Modelo de <br> planilha <br> financeira</p>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm ebook-col">
                     <img src="./img/Vector (6).png" alt="Ícone 3" class="mb-2">
                     <p>10 passos para conseguir emprego fora do país</p>
                 </div>
@@ -248,27 +252,54 @@
 
 
     <!-- Call to Action -->
-    <section class="cta-section text-center py-5">
-        <div class="container">
-            <h2>Garanta sua vaga grátis!</h2>
-            <form class="mt-4">
-                <div class="form-row justify-content-center">
-                    <div class="col-md-3 mb-3">
-                        <input type="text" name="nome" class="form-control" placeholder="Nome" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <input type="tel" name="telefone" class="form-control" placeholder="Telefone" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <button type="submit" class="btn btn-primary w-100">Garantir vaga grátis</button>
+    <section class="container-fluid my-5 form-section" id="form-section">
+        <div class="row justify-content-center ">
+            <div class="col-md-6 col-lg-4">
+                <div class="form-card p-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Garanta sua vaga grátis!</h3>
+                        <p class="card-text text-center">Participe de nosso grupo de WhatsApp para receber os links das aulas e do E-book</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" class="form-control inputs" id="nome" placeholder="Nome">
+                                <p class="error-msg">Campo obrigatório</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control inputs" id="email" placeholder="Email">
+                                <p class="error-msg">Campo obrigatório</p>
+                                <small class="form-text text-muted">(Insira para receber todas as novidades do mercado de intercâmbio)</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="whatsapp" class="form-label">Whatsapp:</label>
+                                <input type="text" class="form-control inputs" id="whatsapp" placeholder="(__) _____-____">
+                                <p class="error-msg">Campo obrigatório</p>
+                                <small class="form-text text-muted">(Os links para as aulas e E-book serão enviados em nossos grupos)</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País de interesse:</label>
+                                <select class="form-select" id="pais">
+                                    <option selected>Escolher país</option>
+                                    <option value="1">Austrália</option>
+                                    <option value="2">Irlanda</option>
+                                    <option value="3">Canadá</option>
+                                    <option value="3">Nova zelândia</option>
+                                    <!-- Adicione outros países conforme necessário -->
+                                </select>
+                                <small class="form-text text-muted">(Essa informação serve para fazermos um planejamento mais personalizado para você)</small>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" id="enviar" class="btn btn-orange">Confirmar inscrição</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
+    
 
     <!-- Rodapé -->
     <footer class="contacts text-black text-center py-3">
@@ -276,8 +307,8 @@
 
 
 
-            <div class="row social-media mb-3 justify-content-between">
-                <div>
+            <div class="row social-media mb-3 justify-content-between footer-content">
+                <div class="images-footer">
 
                     <img src="./img/Vector.png" alt="">
                     <img src="./img/Vector (7).png" alt="">
@@ -306,12 +337,35 @@
         </div>
     </footer>
 
+
+    <!-- Modal de Sucesso -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-enfeite"></div>
+                <div class="modal-header">	
+                    <h4 class="modal-title w-100">Inscrição confirmada
+                        com sucesso!!</h4>	
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Você receberá os links em breve 
+                        no seu WhatsApp</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-block" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
+    <script src="js/form .js"></script>
 </body>
 
 </html>
